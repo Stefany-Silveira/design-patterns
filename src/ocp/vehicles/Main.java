@@ -1,6 +1,6 @@
 package ocp.vehicles;
 
-import br.com.stefany.solid.ocp.TypeVehicle;
+import ocp.TypeVehicle;
 
 public class Main {
 
