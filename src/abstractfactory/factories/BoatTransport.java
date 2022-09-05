@@ -7,7 +7,7 @@ import abstractfactory.boats.IBoat;
 import abstractfactory.landvihecles.Car;
 import abstractfactory.landvihecles.ILandVehicle;
 
-public class UberTransport implements ITransportFactory {
+public class BoatTransport implements ITransportFactory {
 
     @Override
     public ILandVehicle createTransportVehicle() {

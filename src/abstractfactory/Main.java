@@ -1,6 +1,7 @@
 package abstractfactory;
 
 import abstractfactory.app.Application;
+import abstractfactory.factories.BoatTransport;
 import abstractfactory.factories.ITransportFactory;
 import abstractfactory.factories.NineNineTransport;
 import abstractfactory.factories.UberTransport;
@@ -11,15 +12,16 @@ public class Main {
         Application app;
         ITransportFactory factory;
 
-        String company = "uber";
+        String company = "boat";
 
-        if (company == "99") {
+        if (company == "uber") {
             factory= new UberTransport();
-        } else {
+        } else if (company == "99") {
             factory = new NineNineTransport();
+        } else {
+            factory = new BoatTransport();
         }
         app = new Application(factory);
-
         return app;
     }
 
