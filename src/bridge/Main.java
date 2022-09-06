@@ -1,9 +1,6 @@
 package bridge;
 
-import bridge.platforms.Facebook;
-import bridge.platforms.IPlatform;
-import bridge.platforms.TwitchTV;
-import bridge.platforms.YouTube;
+import bridge.platforms.*;
 import bridge.transmissions.AdvancedLive;
 import bridge.transmissions.Live;
 
@@ -16,6 +13,7 @@ public class Main {
         startLive(new YouTube());
         startLive(new TwitchTV());
         startLive(new Facebook());
+        startLive(new DisneyPlus());
     }
 
     public static void startLive(IPlatform platform) {

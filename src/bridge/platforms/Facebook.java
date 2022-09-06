@@ -8,6 +8,7 @@ public class Facebook implements IPlatform {
         configureRMTP();
         System.out.println("Facebook: Transmissão Iniciada!");
     }
+
     @Override
     public void configureRMTP() {
         authToken();
